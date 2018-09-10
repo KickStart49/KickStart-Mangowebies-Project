@@ -1,0 +1,74 @@
+@media (max-width: 1199px) {
+	/*Banner section*/
+.logo{margin-right:0;}
+.banner-section {height: 695px;}
+.banner-text { margin-top: 200px; margin-bottom: 70px;}
+.banner-timer {margin-top: 215px;}
+.programs-container .program-item{min-height:205px;}
+}
+
+@media (max-width: 991px) {
+	/*Banner section*/
+.header-top .container{
+	position:relative;
+}
+.header-right {display: none; float:none; background-color:#000; clear:both; padding:15px; position:absolute; right:0;
+top:80px;}
+.header-right li{float: none;}
+#toggle-menu{display: block;}
+.banner-text {margin-bottom: 60px;}
+.banner-text h2 {font-size: 64px;}
+.banner-timer {margin-top: 5px;text-align: left;}
+	/*About-us section*/
+.about-us {padding:15px 0;    margin-top: 150px;}
+.about-us-left {margin-top: 0px;}
+#abt-bg{background-size: cover;}
+	/*Sponsor section*/
+
+.sponsor{ padding: 15px 0 45px 0;}
+	/*Get In touch Section*/
+.contact-item { height: 115px;}
+	/*Form*/
+.myform {width: 100%;}
+.myform .form-control { height: 50px;}
+
+
+
+}
+@media (max-width: 767px) {
+	/*Banner section*/
+.banner-section {height: 620px;}
+.banner-text { margin-top: 150px;}
+.banner-text h2 {font-size: 40px;margin-bottom: 10px;}	
+.banner-text p {font-size: 18px;line-height: 28px;}
+	/*About-us section*/
+.sec-title { margin-bottom: 30px;}
+.sec-title h2 { font-size: 32px;}
+.about-us-left p { line-height: 20px; font-size: 16px;}
+	/*Schedule section*/
+.schedule-event .event-title {margin-top: 15px;}
+.event-content {font-size: 15px;line-height: 23px;}
+.schedule-event .event-title {margin-top: 15px;}
+	/*Sponsor Section*/
+.sponsor-img {margin: 10px 0;}	
+
+}
+@media (max-width: 479px) {
+	/*Banner section*/
+
+.logo img {width: 135px;}
+.sec-title h2 { font-size: 26px;}
+.banner-section {height: 580px;}
+.banner-text h2 {font-size: 30px;}
+.banner-timer h2{font-size: 24px;}
+.banner-text p {font-size: 16px;line-height: 24px;}
+#countdown > span{font-size:35px;width:60px;padding:6px 0;margin-right:10px;}
+	/*About-us section*/
+.about-us-right .video-container a {width: 100%;}
+.programs-container .program-item img {position: static;padding-left: 10px;}
+.programs-container .program-item {padding-left: 30px;}
+  	/*Schedule section*/
+.schedule-event .time {font-size: 18px;}
+.schedule-event .location {font-size: 16px;}
+.event-content { font-size: 15px;line-height: 22px;letter-spacing: 0px;}
+}

@@ -1,0 +1,147 @@
+/*btn*/
+.btn {
+    font-family: 'lato';
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding: 10px 25px;
+    transition: 0.4s all;
+    -webkit-transition: 0.4s all;
+    -moz-transition: 0.4s all;
+    border-radius: 30px;
+    font-size: 18px;
+}
+.btn-gradient{
+    background: #e00044;
+    background: -moz-linear-gradient(45deg, #e00044 0%, #fa4700 100%);
+    background: -webkit-linear-gradient(45deg, #e00044 0%,#fa4700 100%);
+    background: linear-gradient(45deg, #e00044 0%,#fa4700 100%);
+    color: #fff;
+    border: none;
+}
+.btn-gradient:hover {
+    background: #fa4700;
+    background: -moz-linear-gradient(45deg, #fa4700 0%, #e00044 100%);
+    background: -webkit-linear-gradient(45deg, #fa4700 0%,#e00044 100%);
+    background: linear-gradient(45deg, #fa4700 0%,#e00044 100%);
+    border: none;
+    color: #fff;
+}
+
+/*Start Admin Login page*/
+.admin-login {
+    margin: 150px  0;
+}
+.admin-loginsection {
+    background: #fff;
+    width: 550px;
+    margin: 0 auto;
+    border-radius: 6px;
+    color: rgba(0 0 0 .0.9);
+    -webkit-box-shadow: 1px 6px 56px 4px rgba(132, 142, 158, 0.75);
+    -moz-box-shadow: 1px 6px 56px 4px rgba(132, 142, 158, 0.75);
+    box-shadow: 1px 6px 56px 4px rgba(132, 142, 158, 0.75);
+}
+.admin-loginsection h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(0,0,0,0.7);
+}
+.admin-loginform {
+    width: 500px;
+    margin: 0 auto;
+    padding: 25px 65px;
+    border-bottom: 1px solid #ccc;
+}
+.admin-loginform h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 17px;
+}
+.admin-logo {
+    text-align: center;
+    padding: 20px;
+}
+.admin-logo img {
+    width: 165px;
+}
+.admin-logo p {
+    font-size: 16px;
+    color: rgba(0,0,0,0.7);
+}
+.admin-loginform .form-control:focus {
+    border-color: #e00044;
+    box-shadow: none;
+}
+.admin-loginform .admin-button {
+    text-align: center;
+}
+.admin-loginform .form-control {
+    height: 45px;
+}
+.admin-loginform label {
+    color: rgba(0,0,0,0.7);
+    font-size: 16px;
+}
+
+/*===  Start list history ====*/
+.admin {
+    text-align: center;
+    padding: 15px 0; 
+}
+.admin img {
+    width: 115px;
+}
+.eventlist-info {
+    border: 1px solid #ccc;
+}
+.eventlist-info .btn {
+    line-height: 18px;
+    padding: 10px 25px;
+    font-size: 16px;
+}
+.eventlist-info .table th {
+    font-size: 18px;
+}
+.eventlist-info .list-right{
+    text-align: center;
+}
+.eventlist-info .table td {
+    font-size: 17px;
+}
+.eventlist-info .table {
+    padding: 18px 0;
+    margin: 5px 0;
+}
+.mytable {
+    width: 100%;
+    margin: 120px 0 0;
+}
+.mytable tr, .mytable th {
+    text-align: center;
+}
+.mytable th{
+    padding: 8px 0;
+}
+.mytable td {
+    font-size: 14px;
+    color: rgba(0,0,0,0.7);
+    padding: 13px 0;
+}
+.modal-body {
+    position: relative;
+    padding: 35px 20px;
+}
+.pagination-info{
+    text-align: center;
+}
+.back-button {
+    display: inline-block;
+    float: right;
+    margin-top: 23px;
+}
+.copyright-listhistory  {
+    text-align: center;
+    margin-bottom:0;
+    margin-top: 20px;
+}

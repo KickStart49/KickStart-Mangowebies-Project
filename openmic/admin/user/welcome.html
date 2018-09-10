@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/ico" />
+    <title>Mango Webies :: Openmic</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <META NAME="ROBOTS" CONTENT="INDEX,FOLLOW"></META>
+    <link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/custom.min.css" rel="stylesheet">
+  </head>
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <img src="../../images/mango-webies.png" alt="..." style="width: 98%;padding: 5px;" >
+            </div>
+            <div class="clearfix"></div>
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                
+              </div>
+              <div class="profile_info">
+               
+              </div>
+            </div>
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <br> 
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="../../index.php">OpenMic</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-edit"></i> Schedule <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="../schedule/schedule_dashboard.php">Dashboard</a></li>
+                      <li><a href="../schedule/addschedule.html">Add Schedule</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-edit"></i> Gallary <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="../gallary/gallary_dashboard.php">Dashboard</a></li>
+                      <li><a href="../gallary/addimages.html">Add Images</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- /sidebar menu -->
+
+           
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    Prahar Pandya
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Profile</a></li>
+                   
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+                
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+        <div class="right_col" role="main">
+            <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Schedule <small>Add New</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <br />
+                    <form onsubmit="addschedule()" class="form-horizontal form-label-left" method="post">
+
+                      <div class="form-group">
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12" style="text-align: left;">Event Name : </label>
+                        <div class="col-md-10 col-sm-10 col-xs-12">
+                          <input type="text" id="eventname" class="form-control" name="eventname" placeholder="Enter Event Name">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12" style="text-align: left;">Event Description : </label>
+                        <div class="col-md-10 col-sm-10 col-xs-12">
+                        
+                        <textarea  class="resizable_textarea form-control" name="description" id="description" placeholder="Enter Event Details"></textarea>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12" style="text-align: left;">Event Address : </label>
+                        <div class="col-md-10 col-sm-10 col-xs-12">
+                          <textarea id="address" class="resizable_textarea form-control" name="address" placeholder="Enter Event Address"></textarea>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12" style="text-align: left;">Event Date : </label>
+                        <div class="col-md-10 col-sm-10 col-xs-12">
+                          <input type="date" name="date" id="date">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12" style="text-align: left;">Event Duration(Time) : </label>
+                        <div class="col-md-10 col-sm-10 col-xs-12">
+                          <p id="datepairExample">
+                            <input type="text" class="date start" id="time1" name="time1" placeholder="00" /> 
+                            <input type="text" class="time start" id="time2" name="time2" placeholder="AM" /> &nbsp;&nbsp;&nbsp;To&nbsp;&nbsp;&nbsp;
+                            <input type="text" class="time end" id="time3" name="time3" placeholder="00" />
+                            <input type="text" class="date end" id="time4" name="time4" placeholder="PM" />
+                        </p>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                       
+                        <div class="col-md-2 col-sm-2 col-xs-12">
+                         <input type="submit" class="btn btn-primary btn-block" name="submit" value="Submit">
+                        </div>
+                      </div>
+
+                    </form>
+                  </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+ <script src="../../js/jquery.js"></script>
+<script>
+function addschedule() {
+            var eventname = $('#eventname').val();
+            var address = $('#address').val();
+
+            var description = $('#description').html();
+
+            var time1 = $('#time1').val();
+            var time2 = $('#time2').val();
+            var time3 = $('#time3').val();
+            var time4 = $('#time4').val();
+            var date = $('#date').val();
+       
+            var url = 'ajaxaddschedule.php';
+            var ajaxurl = url;
+            var data = {
+            'action': 'my_action',
+            'eventname': eventname,
+            'description': description,
+            'time1': time1,
+            'date': date,
+            'address': address,
+            'time2': time2,
+            'time3': time3,
+            'time4': time4,
+            };
+             
+            // since 2.8 ajaxurl is always defined in the admin header and points to admin-ajax.php
+            jQuery.post(ajaxurl, data, function(response) {
+                
+              });
+          }
+</script>
+    <!-- <B></B>ootstrap -->
+    <script src="../../js/bootstrap.min.js"></script>
+  
+    <script src="../../js/date.js"></script>
+   
+    <!-- Custom Theme Scripts -->
+    <script src="../../js/custom.min.js"></script>
+  </body>
+</html>
